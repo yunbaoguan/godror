@@ -18,7 +18,7 @@
 //     poolMaxSessions=1000& \
 //     poolIncrement=1& \
 //     connectionClass=POOLED& \
-//     standaloneConnection=1& \
+//     standaloneConnection=0& \
 //     enableEvents=0& \
 //     heterogeneousPool=0& \
 //     prelim=0& \
@@ -110,7 +110,7 @@ const (
 	// DefaultMaxLifeTime is the maximum time in seconds till a pooled session may exist
 	DefaultMaxLifeTime = 1 * time.Hour
 	//DefaultStandaloneConnection holds the default for standaloneConnection.
-	DefaultStandaloneConnection = true
+	DefaultStandaloneConnection = false
 )
 
 // Log function. By default, it's nil, and thus logs nothing.
